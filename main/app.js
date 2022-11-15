@@ -20,11 +20,11 @@ function addTokens(input, tokens) {
         return input;
     }
     else {
-		tokens.forEach(element => {
-			let key = Object.keys(element)[0];
-			input = input.replace('...', '${' + element[key] + '}');
-		});
-		return input;
+	tokens.forEach(element => {
+		let key = Object.keys(element)[0];
+		input = input.replace('...', '${' + element[key] + '}');
+	});
+	return input;
     }
 }
 
